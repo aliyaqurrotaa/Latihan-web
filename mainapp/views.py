@@ -14,3 +14,7 @@ def second_page(request):
 
 def example(request):
     return render(request, 'example.html')
+
+
+def newpage(request):
+    return HttpResponse("new")
