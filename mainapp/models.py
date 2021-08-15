@@ -1,11 +1,11 @@
 from django.db import models
-
+from django.db.models.deletion import CASCADE, PROTECT
 # Create your models here.
 
 
-class Category (models.Model):
+class Category(models.Model):
     name = models.CharField(max_length=100)
-    descrption = models.TextField()
+    description = models.TextField()
 
 
 class Product(models.Model):
